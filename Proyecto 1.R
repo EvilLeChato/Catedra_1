@@ -1,25 +1,26 @@
 #Limpiar el entorno
 rm(list = ls())
 
-#Lllamar a la base de datos
+#Llamar a la base de datos
 library(readxl)
 
-View(nomina_calificaciones2023_Mirian_Astete)
-
-nomina_cali2023 <- read_excel(path = "Library/CloudStorage/OneDrive-Personal/MAGISTER EN DATA SCIENCE/4. Programacion en R/Catedra 1/nomina_calificaciones2023_Mirian Astete.xlsx", 
+View(nomina_calificaciones2023)
+nomina_cali2023 <- read_excel(path = "Ruta del archivo calificaciones", 
                               sheet = 1)
 nomina_cali2023
 
-nomina_prom2023 <- read_excel(path = "Library/CloudStorage/OneDrive-Personal/MAGISTER EN DATA SCIENCE/4. Programacion en R/Catedra 1/nomina_calificaciones2023_Mirian Astete.xlsx", 
+nomina_prom2023 <- read_excel(path = "Ruta del archivo calificaciones", 
                               sheet = 2)
 nomina_prom2023
 
-excel_sheets("Library/CloudStorage/OneDrive-Personal/MAGISTER EN DATA SCIENCE/4. Programacion en R/Catedra 1/nomina_calificaciones2023_Mirian Astete.xlsx")
+excel_sheets("Ruta del archivo calificaciones")
 
 #Se le otorga un nombre a la base de datos
+#hoja numero 1 del archivo
 datos1 <- nomina_cali2023
 datos1
 
+#hoja numero 2 del archivo
 datos2 <- nomina_prom2023
 datos2
 
