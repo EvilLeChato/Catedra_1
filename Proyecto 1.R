@@ -6,12 +6,12 @@ rm(list = ls())
 library(readxl)
 file.choose()
 
-notas_2023<- read_excel(path = "/Users/mirian/Library/CloudStorage/OneDrive-Personal/MAGISTER EN DATA SCIENCE/4. Programacion en R/Catedra 1/nomina_calificaciones2023_Mirian Astete.xlsx", 
-                              sheet = 1)
+notas_2023<- read_excel(path = "archivo",
+                        sheet = 1)
 names(notas_2023)
 
-promedios_2023<- read_excel(path = "/Users/mirian/Library/CloudStorage/OneDrive-Personal/MAGISTER EN DATA SCIENCE/4. Programacion en R/Catedra 1/nomina_calificaciones2023_Mirian Astete.xlsx", 
-                              sheet = 2)
+promedios_2023<- read_excel(path = "archivo",
+                            sheet = 2)
 names(promedios_2023)
 
 
